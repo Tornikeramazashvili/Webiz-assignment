@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device width" />
+    <title>Assignement</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      rel="stylesheet"
+    />
+    <!-- Scripts -->
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="left-section">
+            <button class="btn donation-btn">לתרומה</button>
+            <div class="navigation-options-wrap">
+              <div class="nav-item dropdown">
+                <a
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle language-switcher"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                >
+                  HE
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                </ul>
+              </div>
+              <div class="notifications-wrap">
+                <div class="notification-item-wrap">
+                  <div class="icon search"></div>
+                  <span>חיפוש</span>
+                </div>
+                <div class="notification-item-wrap">
+                  <div class="icon notification"></div>
+                  <span>מה חדש</span>
+                </div>
+              </div>
+              <div class="contact-section">
+                <span>1800-599-995</span>
+                <span>צרו קשר</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                תפריט
+                <div class="dropdown-icon"></div>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">תפריט</a>
+                <a class="dropdown-item" href="#">תפריט</a>
+                <a class="dropdown-item" href="#">תפריט</a>
+              </div>
+            </div>
+            <div class="brand-logo"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="header-title-container">
+        <div class="header-title-wrapper">
+          <h3 class="header-title-top-text">ךרד לכב ןטרסב םיקבאנ</h3>
+          <h1 class="header-title-main-text">
+            שבוע המודעות למניעת סרטן העור ולגילוי מוקדם
+          </h1>
+          <div class="header-title-bottom-text-wrapper">
+            <h3 class="header-title-bottom-text">למידע נוסף</h3>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="header-background-image"></div>
+    <div class="header-linear-gradient"></div>
+    <div class="header-input-container">
+      <div class="header-input-wrapper">
+        <button class="header-input-button">חיפוש</button>
+        <input class="header-input" type="text" placeholder="חיפוש... " />
+      </div>
+    </div>
+    <img
+      class="background-oval-1"
+      src="./assets/png/background-oval-1.png"
+      alt=""
+    />
+    <img
+      class="background-oval-2"
+      src="./assets/png/background-oval-2.png"
+      alt=""
+    />
+    <main>
+      <section class="icon-cards-section">
+        <h2 class="section-title">איך נוכל לסייע לך?</h2>
+        <div class="icon-cards-container">
+          <div class="icon-card-wrapper">
+            <img src="./assets/svg/location.svg" alt="location" />
+            <div class="icon-card-text">הסניף הקרוב</div>
+          </div>
+          <div class="icon-card-wrapper">
+            <div class="icon-card-grouped-icon-wrapper">
+              <img
+                class="icon-grouped"
+                src="./assets/svg/search-multiple-background.svg"
+                alt=""
+              />
+              <img
+                class="icon-grouped-outline"
+                src="./assets/svg/search-multiple.svg"
+                alt="search"
+              />
+            </div>
+            <div class="icon-card-text">אבחון מוקדם</div>
+          </div>
+          <div class="icon-card-wrapper">
+            <div class="icon-card-grouped-icon-wrapper">
+              <img
+                class="icon-grouped"
+                src="./assets/svg/heart-background.svg"
+                alt=""
+              />
+              <img
+                class="icon-grouped-outline"
+                src="./assets/svg/heart.svg"
+                alt="heart"
+              />
+            </div>
+            <div class="icon-card-text">מניעה וגורמי סיכון</div>
+          </div>
+          <div class="icon-card-wrapper">
+            <img src="./assets/svg/home.svg" alt="home" />
+            <div class="icon-card-text">מלונית לחולים</div>
+          </div>
+          <div class="icon-card-wrapper">
+            <img src="./assets/svg/convo.svg" alt="convo" />
+            <div class="icon-card-text">התייעצות עם מומחים</div>
+          </div>
+          <div class="icon-card-wrapper">
+            <img src="./assets/svg/person.svg" alt="person" />
+            <div class="icon-card-text">שיקום ותמיכה</div>
+          </div>
+          <div class="icon-card-wrapper">
+            <img src="./assets/svg/pencil.svg" alt="pencil" />
+            <div class="icon-card-text">זכויות החולה</div>
+          </div>
+          <div class="icon-card-wrapper">
+            <img src="./assets/svg/tie.svg" alt="tie" />
+            <div class="icon-card-text">ןטרס תולחמ</div>
+          </div>
+        </div>
+      </section>
+      <section class="biology-section">
+        <h2 class="section-title">כדאי לדעת</h2>
+        <div class="biology-cards-container">
+          <div class="biology-card-wrapper">
+            <img
+              class="biology-card-image"
+              src="./assets/png/biology-1.png"
+              alt=""
+            />
+            <div class="biology-card-title">והמ דשה ןטרס</div>
+            <div class="biology-card-subtitle">
+              תופתתשהב דשה ןטרס לע ףיקמ עדימ םוחתב םיחמומה בטימ
+            </div>
+            <div class="biology-card-button-wrapper">
+              <img src="./assets/svg/arrow-left-blue.svg" alt="" />
+              <div class="biology-card-button-text">למידע נוסף</div>
+            </div>
+          </div>
+          <div class="biology-card-wrapper">
+            <img
+              class="biology-card-image"
+              src="./assets/png/biology-2.png"
+              alt=""
+            />
+            <div class="biology-card-title">והמ דשה ןטרס</div>
+            <div class="biology-card-subtitle">
+              תופתתשהב דשה ןטרס לע ףיקמ עדימ םוחתב םיחמומה בטימ
+            </div>
+            <div class="biology-card-button-wrapper">
+              <img src="./assets/svg/arrow-left-blue.svg" alt="" />
+              <div class="biology-card-button-text">למידע נוסף</div>
+            </div>
+          </div>
+          <div class="biology-card-wrapper">
+            <img
+              class="biology-card-image"
+              src="./assets/png/biology-3.png"
+              alt=""
+            />
+            <div class="biology-card-title">והמ דשה ןטרס</div>
+            <div class="biology-card-subtitle">
+              תופתתשהב דשה ןטרס לע ףיקמ עדימ םוחתב םיחמומה בטימ
+            </div>
+            <div class="biology-card-button-wrapper">
+              <img src="./assets/svg/arrow-left-blue.svg" alt="" />
+              <div class="biology-card-button-text">למידע נוסף</div>
+            </div>
+          </div>
+          <div class="biology-card-wrapper">
+            <img
+              class="biology-card-image"
+              src="./assets/png/biology-4.png"
+              alt=""
+            />
+            <div class="biology-card-title">והמ דשה ןטרס</div>
+            <div class="biology-card-subtitle">
+              תופתתשהב דשה ןטרס לע ףיקמ עדימ םוחתב םיחמומה בטימ
+            </div>
+            <div class="biology-card-button-wrapper">
+              <img src="./assets/svg/arrow-left-blue.svg" alt="" />
+              <div class="biology-card-button-text">למידע נוסף</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stats-section">
+        <h3 class="section-subtitle">?ךתמורת תוכזב הנשה השענ המ</h3>
+        <h2 class="section-title">םכתרזעב לועפל ךישמנ</h2>
+        <div class="stats-bubbles-container">
+          <div class="stats-bubble-one-wrapper">
+            <div class="stats-bubble one"></div>
+          </div>
+          <div class="stats-bubble-two-wrapper">
+            <div class="stats-bubble two">
+              <div class="stats-bubble-number white">800</div>
+              <div class="stats-bubble-title white">אלף חוברות</div>
+              <div class="stats-bubble-subtitle white">לרופאים וחוקרים</div>
+            </div>
+            <div class="stats-bubble three"></div>
+          </div>
+          <div class="stats-bubble-three-wrapper">
+            <div class="stats-bubble four"></div>
+            <div class="stats-bubble five">
+              <div class="stats-bubble-number blue">672</div>
+              <div class="stats-bubble-title black">אלף חוברות</div>
+              <div class="stats-bubble-subtitle black">לרופאים וחוקרים</div>
+            </div>
+          </div>
+          <div class="stats-bubble-four-wrapper">
+            <div class="stats-bubble six">
+              <div class="stats-bubble-number white">400+</div>
+              <div class="stats-bubble-title white">מענקי מחקר</div>
+              <div class="stats-bubble-subtitle white">לרופאים וחוקרים</div>
+            </div>
+            <div class="stats-bubble seven"></div>
+          </div>
+          <div class="stats-bubble-five-wrapper">
+            <div class="stats-bubble eight"></div>
+            <div class="stats-bubble nine">
+              <div class="stats-bubble-number blue">672</div>
+              <div class="stats-bubble-title blue">מענקי מחקר</div>
+              <div class="stats-bubble-subtitle blue">לרופאים וחוקרים</div>
+            </div>
+            <div class="stats-bubble ten"></div>
+          </div>
+          <div class="stats-bubble-six-wrapper">
+            <div class="stats-bubble eleven">
+              <div class="stats-bubble-number blue">780+</div>
+              <div class="stats-bubble-title black">מענקי מחקר</div>
+              <div class="stats-bubble-subtitle black">לרופאים וחוקרים</div>
+            </div>
+            <div class="stats-bubble twelve"></div>
+          </div>
+        </div>
+        <button class="stats-bubbles-button blue-button">בזכות תרומתי</button>
+      </section>
+      <section class="people-section">
+        <h3 class="section-subtitle">ךרדה לכ ךרואל</h3>
+        <h2 class="section-title">החפשמהמ קלח תויהל ואוב</h2>
+        <img class="people-image" src="./assets/png/people.png" alt="people" />
+        <div class="people-text">
+          .ןטרס ילוחל הווקת איבהל לכונש השוריפ ךלש הנתמה .םעפ יאמ רתוי השקו הבוט
+          ,המכח הרוצב ןטרסב םימחלנ ונחנא .ךתכימת לע הדות דחיב
+        </div>
+        <div class="people-buttons-wrapper">
+          <button class="people-button left">להתנדבות</button>
+          <button class="people-button right custom-pink-button">לתרומה</button>
+        </div>
+      </section>
+      <section class="video-section">
+        <h2 class="section-title">סרטון הסבר</h2>
+        <img class="video-image" src="./assets/png/video.png" alt="video" />
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer-top-section-container">
+        <div class="footer-top-section-content-wrapper">
+          <button class="footer-top-section-button blue-button">להרשמה</button>
+          <input class="footer-input" type="text" placeholder="חיפוש... " />
+          <input class="footer-input" type="text" placeholder="חיפוש... " />
+          <div class="footer-top-section-text-wrapper">
+            <div class="footer-top-section-sub-text">םיניינעב ראשהל</div>
+            <div class="footer-top-section-main-text">
+              םינוכדע תלבקל רטלזוינל ומשריה
+            </div>
+          </div>
+        </div>
+        <img
+          class="footer-background-oval one"
+          src="assets/png/footer-background-oval-1.png"
+          alt=""
+        />
+        <img
+          class="footer-background-oval two"
+          src="assets/png/footer-background-oval-2.png"
+          alt=""
+        />
+        <img
+          class="footer-background-oval three"
+          src="assets/png/footer-background-oval-3.png"
+          alt=""
+        />
+        <img
+          class="footer-background-oval four"
+          src="assets/png/footer-background-oval-4.png"
+          alt=""
+        />
+        <img
+          class="footer-background-oval five"
+          src="assets/png/footer-background-oval-5.png"
+          alt=""
+        />
+      </section>
+      <section class="footer-middle-section-container">
+        <div class="footer-middle-section-content-wrapper">
+          <div class="footer-middle-section-item-wrapper left">
+            <div class="footer-middle-section-item-title">
+              התרומה שלכם חשובה להם
+            </div>
+            <div class="footer-middle-section-item-subtitle">
+              בעזרת תרומתכם, נוכל להמשיך לחקור, לתקדם, להילחם ולרפא
+            </div>
+            <button class="footer-middle-section-button custom-pink-button">
+              לתרומה
+            </button>
+            <div class="footer-middle-section-logos-wrapper">
+              <img src="./assets/png/footer-logo-1.png" alt="logo" />
+              <img src="./assets/png/footer-logo-2.png" alt="logo" />
+            </div>
+          </div>
+          <div class="footer-middle-section-item-wrapper">
+            <div class="footer-middle-section-item-title">יצירת קשר</div>
+            <div class="footer-middle-section-item-divider"></div>
+            <div class="footer-middle-section-item-subtitle">לפניה מקוונת</div>
+            <div class="footer-middle-section-item-number">1-800-599-995</div>
+            <div class="footer-middle-section-item-title">עקבו אחרינו</div>
+            <div class="footer-middle-section-item-divider"></div>
+            <div class="footer-middle-section-social-media-wrapper">
+              <img
+                class="footer-middle-section-social-media-icon"
+                src="./assets/svg/facebook.svg"
+                alt="facebook"
+              />
+              <img
+                class="footer-middle-section-social-media-icon"
+                src="./assets/svg/instagram.svg"
+                alt="instagram"
+              />
+              <img
+                class="footer-middle-section-social-media-icon"
+                src="./assets/svg/twitter.svg"
+                alt="twitter"
+              />
+              <img
+                class="footer-middle-section-social-media-icon"
+                src="./assets/svg/youtube.svg"
+                alt="youtube"
+              />
+            </div>
+          </div>
+          <div class="footer-middle-section-item-wrapper">
+            <div class="footer-middle-section-item-title">גורמי סיכון</div>
+            <div class="footer-middle-section-item-divider"></div>
+            <div class="footer-middle-section-item-subtitle">המאבק בעישון</div>
+            <div class="footer-middle-section-item-subtitle">חכם בשמש</div>
+            <div class="footer-middle-section-item-subtitle">
+              תזונה ומשקל גוף תקין
+            </div>
+            <div class="footer-middle-section-item-subtitle">פעילות גופנית</div>
+            <div class="footer-middle-section-item-subtitle">
+              כללים לחיים בריאים
+            </div>
+          </div>
+          <div class="footer-middle-section-item-wrapper">
+            <div class="footer-middle-section-item-title">מידע לחולים</div>
+            <div class="footer-middle-section-item-divider"></div>
+            <div class="footer-middle-section-item-subtitle">
+              מוקדי מידע ותמיכה
+            </div>
+            <div class="footer-middle-section-item-subtitle">
+              תרופות וטיפולים
+            </div>
+            <div class="footer-middle-section-item-subtitle">
+              קבוצות ומרכזי תמיכה
+            </div>
+            <div class="footer-middle-section-item-subtitle">
+              מחקרים קלינים בישראל
+            </div>
+            <div class="footer-middle-section-item-subtitle">
+              התמודדות ושיקום
+            </div>
+          </div>
+          <div class="footer-middle-section-item-wrapper">
+            <div class="footer-middle-section-item-title">מחלות סרטן</div>
+            <div class="footer-middle-section-item-divider"></div>
+            <div class="footer-middle-section-item-subtitle">סרטן השד</div>
+            <div class="footer-middle-section-item-subtitle">סרטן המעי הגס</div>
+            <div class="footer-middle-section-item-subtitle">סרטן הערמונית</div>
+            <div class="footer-middle-section-item-subtitle">
+              ילדים ומתבגרים חולי סרטן
+            </div>
+            <div class="footer-middle-section-item-subtitle">גידולי מוח</div>
+          </div>
+          <div class="footer-dropdown-menu-wrapper">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                מחלות סרטן
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">סרטן השד</a></li>
+                <li><a class="dropdown-item" href="#">סרטן המעי הגס</a></li>
+                <li><a class="dropdown-item" href="#">סרטן הערמונית</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">ילדים ומתבגרים חולי סרטן</a>
+                </li>
+                <li><a class="dropdown-item" href="#">גידולי מוח</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                מידע לחולים
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">מוקדי מידע ותמיכה</a></li>
+                <li><a class="dropdown-item" href="#">תרופות וטיפולים</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">קבוצות ומרכזי תמיכה</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">מחקרים קלינים בישראל</a>
+                </li>
+                <li><a class="dropdown-item" href="#">התמודדות ושיקום</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                גורמי סיכון
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">המאבק בעישון</a></li>
+                <li><a class="dropdown-item" href="#">חכם בשמש</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">תזונה ומשקל גוף תקין</a>
+                </li>
+                <li><a class="dropdown-item" href="#">פעילות גופנית</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">כללים לחיים בריאים</a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                יצירת קשר
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">לפניה מקוונת</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-bottom-section-container">
+        <div class="footer-bottom-section-content-wrapper">
+          <div class="footer-bottom-section-left-wrapper">
+            <div class="footer-middle-section-item-title">
+              ךרד לכב ןטרסב םיקבאנ
+            </div>
+            <div class="footer-bottom-section-icons-wrapper">
+              <div class="footer-botton-section-icon-wrapper">
+                <img src="./assets/svg/menu-footer.svg" alt="menu" />
+                <div class="footer-bottom-section-icon-text">מידע מקצועי</div>
+              </div>
+              <div class="footer-botton-section-icon-wrapper">
+                <img src="./assets/svg/person-footer.svg" alt="person" />
+                <div class="footer-bottom-section-icon-text">שיקום</div>
+              </div>
+              <div class="footer-botton-section-icon-wrapper">
+                <img
+                  src="./assets/svg/heart-rate-footer.svg"
+                  alt="heart rate"
+                />
+                <div class="footer-bottom-section-icon-text">מניעה ואבחון</div>
+              </div>
+              <div class="footer-botton-section-icon-wrapper">
+                <img src="./assets/svg/eye-footer.svg" alt="eye" />
+                <div class="footer-bottom-section-icon-text">רקחמ</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom-section-right-wrapper">
+            <div class="footer-bottom-section-right-top-text">
+              ינבל ,ןטרס ילוחל עדימ ,ןטרס תולחמ לע ,םדקומ ןוחבאו ןטרס תעינמ יכרד
+              לע ןימאו ןכדועמ עדימ אוצמל ןתינ ןטרסב המחלמל הדוגאה רתאב .דועו
+              םייעוצקמ םימורופ ,ןטרס ילוח תויוכז ,הכימת יזכרמ ,םילופיטו תופורת
+              ,תודדומתה יכרד לע ,םימילחמלו םתחפשמ .םוחת לכב החמומ םע תוצעייתהל
+              ףילחת וא תיעוצקמ תעד תווח ,תיאופר הצע רדגב םניאו דבלב עדימ קפסל
+              ודעונ רתאב םיעיפומה םינכתה .תויטרפה תוינידמבו רתאב שומישה יאנתב
+              ןייעל אנ
+            </div>
+            <div class="footer-bottom-section-right-bottom-text-wrapper">
+              <div class="footer-powered-by">Powered By</div>
+              <img
+                class="footer-purple-icon"
+                src="./assets/svg/purple.svg"
+                alt="purple"
+              />
+              <div class="footer-credits">
+                © כל הזכויות שמורות לאגודה למלחמה בסרטן בישראל 2022
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
